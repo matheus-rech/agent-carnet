@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Relax unused locals and parameters for tests to allow for common test patterns
+    // (e.g. mocking, unused arguments in test callbacks) without causing build failures.
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  }
+}
